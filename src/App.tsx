@@ -1,14 +1,19 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/pages/Login";
+import Cadastro from "./components/pages/Cadastro";
 
-const App = () => {
+const App: React.FC = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route
 					path="/login"
 					Component={Login}
+				/>
+				<Route
+					path="/cadastro"
+					Component={Cadastro}
 				/>
 			</Routes>
 		</BrowserRouter>
