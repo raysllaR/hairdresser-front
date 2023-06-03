@@ -1,0 +1,14 @@
+.card {
+	border-radius: 24px !important;
+	background: var(--gray-100) !important;
+	box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.5) !important;
+	width: 100% !important;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 40px !important;
+	width: 100%;
+}
