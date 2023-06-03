@@ -1,0 +1,17 @@
+.container-logo {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	align-items: center;
+	gap: 12px;
+}
+
+.container-logo span {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.logo-img {
+	width: 135px;
+	height: 125px;
+}
