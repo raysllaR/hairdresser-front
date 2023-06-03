@@ -1,0 +1,25 @@
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.input {
+	border-radius: 8px;
+	background-color: var(--white);
+	color: var(--black);
+	padding: 10px;
+	gap: 10px;
+}
+
+.icon {
+	width: 18px;
+}
+
+.button {
+	background: var(--secondary) !important;
+	color: var(--white) !important;
+	padding: 10px !important;
+	font-weight: 600 !important;
+	border-radius: 16px !important;
+}
