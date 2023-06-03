@@ -1,16 +1,18 @@
 import { InputBase } from "@mui/material";
-import React from "react";
+import React, { ReactNode } from "react";
 
 type TInputIcon = {
 	placeholder: string;
 	startAdornmentImgPath: string;
 	type?: string;
+	buttonIcon?: ReactNode;
 };
 
 const InputIcon: React.FC<TInputIcon> = ({
 	type = "text",
 	placeholder,
 	startAdornmentImgPath,
+	buttonIcon,
 }) => {
 	return (
 		<InputBase
@@ -24,6 +26,7 @@ const InputIcon: React.FC<TInputIcon> = ({
 					alt="Icon"
 				/>
 			}
+			endAdornment={buttonIcon}
 		/>
 	);
 };
