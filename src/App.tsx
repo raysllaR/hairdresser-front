@@ -4,6 +4,7 @@ import Login from "./components/pages/Login";
 import Cadastro from "./components/pages/Cadastro";
 import Home from "./components/pages/Home";
 import "./style.css";
+import EditarPerfil from "./components/pages/EditarPerfil";
 
 const App: React.FC = () => {
 	return (
@@ -20,6 +21,10 @@ const App: React.FC = () => {
 				<Route
 					path="/"
 					Component={Home}
+				/>
+				<Route
+					path="/editarperfil"
+					Component={EditarPerfil}
 				/>
 			</Routes>
 		</BrowserRouter>
