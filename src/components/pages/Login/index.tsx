@@ -1,60 +1,76 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import "./index.css";
-import { Button, CardContent, TextField } from "@mui/material";
+import { ButtonBase, CardContent, InputBase } from "@mui/material";
+import logo from "../../../assets/images/logo.svg";
+import iconMail from "../../../assets/images/icons/mail.svg";
+import iconkey from "../../../assets/images/icons/key.svg";
+import iconVisibility from "../../../assets/images/icons/visibility.svg";
 
 const Login: React.FC = () => {
 	return (
 		<div id="app">
-			<div className="divPai">
-				<div className="logo">
+			<div className="container">
+				<div className="container-logo">
 					<img
 						className="logo-img"
-						src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
+						src={logo}
 					/>
 					<span>Hero Hairdresses</span>
 				</div>
-				<Card
-					style={{
-						background: "rgba(0,0,0,0.5)",
-						width: "100%",
-					}}>
-					<CardContent
-						style={{
-							display: "flex",
-							flexDirection: "column",
-							gap: 30,
-							padding: 20,
-							width: "100%",
-						}}>
-						<span>Olá! Seja Bem-vindo</span>
+				<Card className="card">
+					<CardContent className="card-content">
+						<span className="title">Olá! Seja Bem-Vindo!</span>
 						<form
-							action=""
-							style={{ display: "flex", flexDirection: "column", gap: 30 }}>
-							<TextField
-								id="outlined-basic"
-								label="Outlined"
-								variant="outlined"
+							className="form"
+							action="">
+							<InputBase
+								id="email-input"
+								className="input"
+								type="email"
+								placeholder="E-mail"
+								startAdornment={
+									<img
+										className="icon"
+										src={iconMail}
+									/>
+								}
 							/>
-							<TextField
-								id="outlined-basic"
-								label="Outlined"
-								variant="outlined"
+
+							<InputBase
+								id="email-input"
+								className="input"
+								placeholder="Senha"
+								type="password"
+								startAdornment={
+									<img
+										className="icon"
+										src={iconkey}
+									/>
+								}
+								endAdornment={
+									<img
+										className="icon"
+										src={iconVisibility}
+									/>
+								}
 							/>
-							<Button
-								type="submit"
-								variant="contained">
+
+							<ButtonBase
+								className="button"
+								type="submit">
 								Entrar
-							</Button>
+							</ButtonBase>
 						</form>
-						{/* <div className="dados-adicionais"> */}
-						<span>
-							Esqueceu sua senha? <a href="">Recuperar</a>
-						</span>
-						<span>
-							Ainda não tem conta? <a href="">Cadastre-se</a>
-						</span>
-						{/* </div> */}
+
+						<div className="more">
+							<span>
+								Esqueceu sua senha? <a href="">Recuperar</a>
+							</span>
+							<span>
+								Ainda não tem conta? <a href="">Cadastre-se</a>
+							</span>
+						</div>
 					</CardContent>
 				</Card>
 			</div>
