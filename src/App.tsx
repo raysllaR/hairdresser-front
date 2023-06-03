@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/pages/Login";
 import Cadastro from "./components/pages/Cadastro";
 import Home from "./components/pages/Home";
+import "./style.css";
 
 const App: React.FC = () => {
 	return (
