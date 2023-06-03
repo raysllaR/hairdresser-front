@@ -19,7 +19,10 @@ const Logo: React.FC<ILogo> = ({
 			className="container-logo"
 			style={{ flexDirection: direction }}>
 			<img
-				style={{ width: direction === "row" ? 40 : "fit-content" }}
+				style={{
+					height: direction === "row" ? 40 : "fit-content",
+					width: direction === "row" ? 40 : "fit-content",
+				}}
 				className="logo-img"
 				src={theme === "colorful" ? logo : logoWhite}
 				alt="Hero Hairdresser Logo"
