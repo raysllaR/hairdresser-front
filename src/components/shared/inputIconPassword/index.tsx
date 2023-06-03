@@ -1,9 +1,9 @@
-import { InputBase } from "@mui/material";
 import React, { useState } from "react";
 import iconVisibility from "../../../assets/images/icons/visibility.svg";
 import iconkey from "../../../assets/images/icons/key.svg";
-import "./style.css";
+import iconNoVisibility from "../../../assets/images/icons/no-visibility.svg";
 import InputIcon from "../inputIcon";
+import "./style.css";
 
 const InputIconPassword: React.FC = () => {
 	const [showPassword, setShowPassword]: [
@@ -25,7 +25,7 @@ const InputIconPassword: React.FC = () => {
 					onClick={togglePasswordVisibility}
 					alt="Icon"
 					className="icon button-icon"
-					src={iconVisibility}
+					src={showPassword ? iconVisibility : iconNoVisibility}
 				/>
 			}
 		/>
