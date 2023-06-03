@@ -12,4 +12,17 @@
 	align-items: center;
 	height: 100%;
 	justify-content: space-evenly;
+	padding: 20px;
+}
+
+.cadastro .cadastro-navigator {
+	color: var(--white);
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 40px;
+	font-size: 0.87rem;
+	/* display: flex;
+	gap: 5px;
+	align-self: flex-start; */
 }
