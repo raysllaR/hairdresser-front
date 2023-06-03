@@ -21,6 +21,7 @@ a {
 }
 
 .container {
+	padding-top: 20px;
 	width: 500px;
 	display: flex;
 	flex-direction: column;
@@ -30,19 +31,6 @@ a {
 	gap: 30px;
 }
 
-.container-logo {
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	width: fit-content;
-	align-items: center;
-	gap: 12px;
-}
-
-.container-logo span {
-	font-size: 1.5rem;
-	font-weight: 500;
-}
 .more {
 	display: flex;
 	flex-direction: column;
@@ -53,11 +41,6 @@ a {
 	font-size: 2rem;
 	font-weight: 300;
 	text-align: center;
-}
-
-.logo-img {
-	width: 135px;
-	height: 125px;
 }
 
 .dados-adicionais {
