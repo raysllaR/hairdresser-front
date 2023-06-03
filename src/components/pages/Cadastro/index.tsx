@@ -9,7 +9,7 @@ const Cadastro: React.FC = () => {
 		<div className="cadastro">
 			<div className="container-cadastro">
 				<div className="cadastro-navigator">
-					<a href="">Home</a> > Área de cadastro
+					<a href="">Home</a> {">"} Área de cadastro
 				</div>
 				<Logo />
 				<CardComponent>
