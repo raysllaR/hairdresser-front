@@ -8,6 +8,9 @@ const Cadastro: React.FC = () => {
 	return (
 		<div className="cadastro">
 			<div className="container-cadastro">
+				<div className="cadastro-navigator">
+					<a href="">Home</a> > Área de cadastro
+				</div>
 				<Logo />
 				<CardComponent>
 					<span className="title">Área de Cadastro</span>
