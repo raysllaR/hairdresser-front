@@ -10,6 +10,8 @@ import {
 	MenuItem,
 } from "@mui/material";
 
+import "./style.css";
+
 const Header: React.FC = () => {
 	return (
 		<div className="container-header">
