@@ -1,23 +1,14 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import "./index.css";
-import { CardContent } from "@mui/material";
-import logo from "../../../assets/images/logo.svg";
 import FormLogin from "../../shared/formLogin";
 import CardComponent from "../../shared/CardComponent";
+import "./index.css";
+import Logo from "../../shared/Logo";
 
 const Login: React.FC = () => {
 	return (
 		<div id="app">
 			<div className="container">
-				<div className="container-logo">
-					<img
-						className="logo-img"
-						src={logo}
-						alt="Hero Hairdresser Logo"
-					/>
-					<span>Hero Hairdresses</span>
-				</div>
+				<Logo />
 				<CardComponent>
 					<span className="title">Olá! Seja Bem-Vindo!</span>
 					<FormLogin />
