@@ -4,14 +4,13 @@ import "./style.css";
 
 type TInput = {
 	label: string;
-	placeholder: string;
 	type?: string;
 	requered?: boolean;
 };
 
-const Input: React.FC<TInput> = ({ label, placeholder, type = "text" }) => {
+const Input: React.FC<TInput> = ({ label, type = "text" }) => {
 	return (
-		<>
+		<div id="container-input">
 			<InputLabel
 				className="input-label"
 				htmlFor="my-input">
@@ -20,10 +19,9 @@ const Input: React.FC<TInput> = ({ label, placeholder, type = "text" }) => {
 			<InputBase
 				id="my-input"
 				className="input-padrao"
-				placeholder={placeholder}
 				type={type}
 			/>
-		</>
+		</div>
 	);
 };
 
