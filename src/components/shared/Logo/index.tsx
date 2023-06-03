@@ -10,7 +10,10 @@ interface ILogo {
 	theme?: TTheme;
 }
 
-const Logo: React.FC<ILogo> = ({ direction = "row", theme = "white" }) => {
+const Logo: React.FC<ILogo> = ({
+	direction = "column",
+	theme = "colorful",
+}) => {
 	return (
 		<div
 			className="container-logo"
