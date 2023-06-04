@@ -1,6 +1,9 @@
 #horarios-list {
 	width: 500px;
 	border-radius: 16px;
+	max-height: 400px;
+	overflow-y: scroll;
+	padding-right: 30px;
 }
 
 #horarios-list .list-item {
