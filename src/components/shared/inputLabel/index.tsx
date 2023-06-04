@@ -2,13 +2,15 @@ import { InputBase, InputLabel } from "@mui/material";
 import React from "react";
 import "./style.css";
 
+type TType = "email" | "password" | "text";
+
 type TInput = {
 	label: string;
-	type?: string;
+	type?: TType;
 	requered?: boolean;
 };
 
-const Input: React.FC<TInput> = ({ label, type = "text" }) => {
+const Input: React.FC<TInput> = ({ label, type = "text", requered = true }) => {
 	return (
 		<div id="container-input">
 			<InputLabel
@@ -20,6 +22,7 @@ const Input: React.FC<TInput> = ({ label, type = "text" }) => {
 				id="my-input"
 				className="input-padrao"
 				type={type}
+				required={requered}
 			/>
 		</div>
 	);
