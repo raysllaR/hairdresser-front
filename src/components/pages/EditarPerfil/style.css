@@ -1,2 +1,28 @@
 #editar-perfil {
 }
+
+#editar-perfil .body {
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#editar-perfil .title {
+	margin-top: 30px;
+	color: var(--primary);
+	font-size: 1.5rem;
+	align-self: baseline;
+}
+
+#editar-perfil .container-buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+#editar-perfil .container-buttons .button {
+	width: 100px;
+	border-radius: 16px;
+}
