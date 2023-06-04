@@ -35,7 +35,7 @@ const Home: React.FC = () => {
 		<div id="home">
 			<div className="body">
 				<Header />
-				<div className="container">
+				<div className="container-home">
 					<HorariosList listHorarios={mockListHorario} />
 					<Calendar />
 				</div>
