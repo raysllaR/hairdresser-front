@@ -1,7 +1,8 @@
 .calendar {
 	background-color: var(--primary) !important;
 	border-radius: 16px !important;
-	color: var(--white);
+	color: var(--white) !important;
+	box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.5);
 }
 
 .calendar .MuiDayCalendar-weekContainer button {
@@ -9,6 +10,7 @@
 	border-radius: 4px !important;
 	color: var(--black);
 	border: none;
+	display: block;
 }
 
 .calendar .MuiDayCalendar-weekContainer button:hover {
