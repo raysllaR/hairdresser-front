@@ -1,0 +1,36 @@
+#horarios-list {
+	width: 500px;
+	border-radius: 16px;
+}
+
+#horarios-list .list-item {
+	background-color: var(--white);
+	border-radius: 16px;
+	margin: 24px 0;
+	box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.5);
+	padding: 0;
+	overflow: hidden;
+}
+
+#horarios-list .horario {
+	background-color: var(--secondary);
+	color: var(--white);
+	padding: 12px;
+	font-weight: 600;
+	text-align: center;
+	width: 72px;
+}
+
+#horarios-list .data {
+	color: var(--primary);
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px 0px 30px;
+	width: 100%;
+}
+
+#horarios-list .data .buttons-icons {
+	display: flex;
+	gap: 10px;
+}
