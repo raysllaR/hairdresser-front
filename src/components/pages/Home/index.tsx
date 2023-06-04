@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Header from "../../shared/Header";
 import HorariosList from "../../shared/HorariosList";
+import Calendar from "../../shared/Calendar";
 
 const Home: React.FC = () => {
 	const mockListHorario: Array<{
@@ -34,7 +35,10 @@ const Home: React.FC = () => {
 		<div id="home">
 			<div className="body">
 				<Header />
-				<HorariosList listHorarios={mockListHorario} />
+				<div className="container">
+					<HorariosList listHorarios={mockListHorario} />
+					<Calendar />
+				</div>
 			</div>
 		</div>
 	);
