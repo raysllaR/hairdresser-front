@@ -1,0 +1,21 @@
+.calendar {
+	background-color: var(--primary) !important;
+	border-radius: 16px !important;
+	color: var(--white);
+}
+
+.calendar .MuiDayCalendar-weekContainer button {
+	background-color: var(--white);
+	border-radius: 4px !important;
+	color: var(--black);
+	border: none;
+}
+
+.calendar .MuiDayCalendar-weekContainer button:hover {
+	background-color: var(--gray-300);
+}
+
+.calendar .MuiDayCalendar-weekContainer button:focus {
+	background-color: var(--secondary);
+	color: var(--white);
+}
