@@ -17,3 +17,9 @@ h1 {
 	text-align: center;
 	color: var(--white);
 }
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
