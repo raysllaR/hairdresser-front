@@ -2,6 +2,7 @@ import Header from "../../shared/Header";
 import React from "react";
 import "./style.css";
 import InputLabel from "../../shared/inputLabel";
+import ButtonComponent from "../../shared/ButtonComponent";
 import ImageUpload from "../../shared/ImageUpload";
 import { ButtonBase } from "@mui/material";
 
@@ -14,7 +15,9 @@ const EditarPerfil: React.FC = () => {
 				<Header />
 				<h2 className="title">Editar Perfil</h2>
 				<ImageUpload />
-				<form action="">
+				<form
+					action=""
+					className="form">
 					<InputLabel label="Nome" />
 					<InputLabel
 						label="Email"
@@ -33,16 +36,15 @@ const EditarPerfil: React.FC = () => {
 						type="password"
 					/>
 					<div className="container-buttons">
-						<ButtonBase
-							className="button"
-							type="submit">
-							Cancelar
-						</ButtonBase>
-						<ButtonBase
-							className="button"
-							type="submit">
-							Editar
-						</ButtonBase>
+						<ButtonComponent
+							text="Cancelar"
+							type="reset"
+							className="reverse"
+						/>
+						<ButtonComponent
+							text="Confirmar"
+							type="submit"
+						/>
 					</div>
 				</form>
 			</div>
