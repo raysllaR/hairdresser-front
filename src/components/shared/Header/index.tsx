@@ -3,14 +3,11 @@ import iconAcount from "../../../assets/images/icons/account_circle.svg";
 import { ClickAwayListener, Paper, MenuList, MenuItem } from "@mui/material";
 import IconImg from "../IconImg";
 import imgLogoSemText from "../../../assets/images/logos/logo-white-withiout-text.svg";
-import "./style.css";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const Header: React.FC = () => {
-	const [showDropMenu, setShowDropMenu]: [
-		boolean,
-		React.Dispatch<React.SetStateAction<boolean>>
-	] = useState(false);
+	const [showDropMenu, setShowDropMenu] = useState<boolean>(false);
 
 	const toogleShoeDropMenu = (): void => {
 		setShowDropMenu(!showDropMenu);
