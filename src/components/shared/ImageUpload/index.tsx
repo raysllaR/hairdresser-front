@@ -1,6 +1,6 @@
 import React, { useState, ChangeEvent, useRef } from "react";
 import { Button, Avatar } from "@material-ui/core";
-import defaultAvatatImg from "../../../assets/images/avatar.png";
+import defaultAvatatImg from "../../../assets/images/utils/avatar.png";
 import editIcon from "../../../assets/images/icons/edit.svg";
 import "./style.css";
 import { Box } from "@mui/material";
