@@ -6,3 +6,14 @@
 	overflow-x: hidden;
 	user-select: none;
 }
+
+a {
+	color: var(--white);
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 300;
+	text-align: center;
+	color: var(--white);
+}
