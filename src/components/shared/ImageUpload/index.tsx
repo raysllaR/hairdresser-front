@@ -30,17 +30,18 @@ const ImageUpload: React.FC = () => {
 	};
 
 	return (
-		<div style={{ position: "relative" }}>
-			<Box className="avatar">
+		<div
+			id="image-upload"
+			style={{ position: "relative" }}>
+			<Box className="box-avatar">
 				<Avatar
 					alt="Selected Image"
+					className="avatar"
 					src={previewImg}
-					style={{ width: "100%", height: "100%" }}
 				/>
 			</Box>
 			<input
 				accept="image/*"
-				id="image-upload"
 				type="file"
 				style={{ display: "none" }}
 				ref={fileInputRef}
@@ -51,11 +52,7 @@ const ImageUpload: React.FC = () => {
 				htmlFor="image-upload">
 				<button
 					onClick={handleButtonClick}
-					style={{
-						borderRadius: 100,
-						background: "var(--primary)",
-						padding: 10,
-					}}>
+					className="button-edit">
 					<img
 						src={editIcon}
 						alt="Icon"
