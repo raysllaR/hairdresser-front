@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import Logo from "../../shared/Logo";
 import iconAcount from "../../../assets/images/icons/account_circle.svg";
 import { ClickAwayListener, Paper, MenuList, MenuItem } from "@mui/material";
+import IconImg from "../IconImg";
+// import imgLogo from "../../../assets/images/logos/logo-white.svg";
+import imgLogoSemText from "../../../assets/images/logos/logo-white-withiout-text.svg";
 import "./style.css";
 
 const Header: React.FC = () => {
@@ -17,16 +19,16 @@ const Header: React.FC = () => {
 	return (
 		<div className="container-header">
 			<div className="header">
-				<Logo
-					direction="row"
-					theme="white"
-				/>
+				<div className="logo-container">
+					<img
+						src={imgLogoSemText}
+						alt=""
+					/>
+					<span>Hero Hairdresses</span>
+				</div>
 				<div>
 					<button onClick={toogleShoeDropMenu}>
-						<img
-							src={iconAcount}
-							alt="icon"
-						/>
+						<IconImg urlImg={iconAcount} />
 						Perfil
 					</button>
 					{showDropMenu ? (
