@@ -1,0 +1,29 @@
+#form-cadastro-rapido {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+#form-cadastro-rapido .container-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+#form-cadastro-rapido .container-inputs {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+#form-cadastro-rapido .button {
+	background: var(--secondary) !important;
+	color: var(--white) !important;
+	padding: 10px !important;
+	font-weight: 600 !important;
+	border-radius: 16px !important;
+}
+
+#form-cadastro-rapido span {
+	color: var(--white);
+}
