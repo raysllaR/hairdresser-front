@@ -5,6 +5,17 @@
 	height: fit-content;
 }
 
+.logo-container {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.logo-container span {
+	color: var(--white);
+	font-size: 1rem;
+}
+
 .header {
 	border-radius: 16px;
 	max-width: 1000px;
@@ -37,4 +48,10 @@ button {
 	gap: 10px;
 	cursor: pointer;
 	align-items: center;
+}
+
+@media (max-width: 400px) {
+	.logo-container span {
+		display: none;
+	}
 }
