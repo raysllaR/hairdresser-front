@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import iconAcount from "../../../assets/images/icons/account_circle.svg";
 import { ClickAwayListener, Paper, MenuList, MenuItem } from "@mui/material";
 import IconImg from "../IconImg";
-// import imgLogo from "../../../assets/images/logos/logo-white.svg";
 import imgLogoSemText from "../../../assets/images/logos/logo-white-withiout-text.svg";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
 	const [showDropMenu, setShowDropMenu]: [
@@ -12,17 +12,21 @@ const Header: React.FC = () => {
 		React.Dispatch<React.SetStateAction<boolean>>
 	] = useState(false);
 
-	const toogleShoeDropMenu = () => {
+	const toogleShoeDropMenu = (): void => {
 		setShowDropMenu(!showDropMenu);
 	};
 
+	const cleanLocalStorage = (): void => {
+		localStorage.removeItem("login");
+	};
+
 	return (
-		<div className="container-header">
+		<div id="container-header">
 			<div className="header">
 				<div className="logo-container">
 					<img
 						src={imgLogoSemText}
-						alt=""
+						alt="Logo"
 					/>
 					<span>Hero Hairdresses</span>
 				</div>
@@ -37,9 +41,17 @@ const Header: React.FC = () => {
 								<MenuList
 									className="dados-menu"
 									autoFocusItem>
-									<MenuItem>Agendamentos</MenuItem>
-									<MenuItem>Editar perfil</MenuItem>
-									<MenuItem>Sair</MenuItem>
+									<Link to="/agendamento">
+										<MenuItem>Agendamentos</MenuItem>
+									</Link>
+									<Link to="/editarperfil">
+										<MenuItem>Editar perfil</MenuItem>
+									</Link>
+									<Link
+										to="/login"
+										onClick={cleanLocalStorage}>
+										<MenuItem>Sair</MenuItem>
+									</Link>
 								</MenuList>
 							</ClickAwayListener>
 						</Paper>
