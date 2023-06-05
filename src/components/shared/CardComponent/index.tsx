@@ -1,10 +1,7 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Card, CardContent } from "@mui/material";
+import TCardComponent from "../../types/TCardComponent";
 import "./style.css";
-
-type TCardComponent = {
-	children: ReactNode;
-};
 
 const CardComponent: React.FC<TCardComponent> = ({ children }) => {
 	return (
