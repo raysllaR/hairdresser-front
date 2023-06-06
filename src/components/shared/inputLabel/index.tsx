@@ -2,13 +2,14 @@ import { InputBase, InputLabel } from "@mui/material";
 import React from "react";
 import "./style.css";
 
-type TType = "email" | "password" | "text" | "number";
+type TType = "email" | "password" | "text" | "number" | "date" | "time";
 
 type TInput = {
 	label: string;
 	type?: TType;
 	requered?: boolean;
 	placeholder?: string;
+	width?: number;
 };
 
 const Input: React.FC<TInput> = ({
@@ -16,6 +17,7 @@ const Input: React.FC<TInput> = ({
 	type = "text",
 	requered = true,
 	placeholder = "",
+	width,
 }) => {
 	return (
 		<div id="container-input">
@@ -25,6 +27,7 @@ const Input: React.FC<TInput> = ({
 				{label}
 			</InputLabel>
 			<InputBase
+				style={{ width: width ? `${width}px` : "100%" }}
 				id="my-input"
 				placeholder={placeholder}
 				className="input-padrao"
