@@ -1,4 +1,7 @@
 #agendamento {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 #agendamento .body {
@@ -8,6 +11,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 }
 
 #agendamento .title {
@@ -20,9 +24,16 @@
 #agendamento .container-buttons {
 	display: flex;
 	justify-content: space-around;
+	margin: 30px 0;
 }
 
 #agendamento .container-buttons .button {
 	width: 100px;
 	border-radius: 16px;
+}
+
+#agendamento .container-buttons .reverse {
+	background-color: transparent !important;
+	color: var(--secondary) !important;
+	border: 1px solid var(--secondary) !important;
 }
