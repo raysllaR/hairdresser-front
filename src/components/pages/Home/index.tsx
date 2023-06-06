@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Header from "../../shared/Header";
 import HorariosList from "../../shared/HorariosList";
@@ -29,15 +29,39 @@ const Home: React.FC = () => {
 			horario: new Date("2023-06-03T17:00:00"),
 			cliente: "Cliente 5",
 		},
+		{
+			horario: new Date("2023-06-03T17:00:00"),
+			cliente: "Cliente 6",
+		},
+		{
+			horario: new Date("2023-06-03T17:00:00"),
+			cliente: "Cliente 7",
+		},
 	];
 
+	const [date, setDate] = useState<Date>(new Date());
+
 	return (
-		<div id="home">
-			<div className="body">
-				<Header />
-				<div className="container-home">
-					<HorariosList listHorarios={mockListHorario} />
-					<Calendar />
+		<div
+			id="home"
+			className="page">
+			<Header />
+			<div className="container-home">
+				<div className="container-title">
+					<h2 className="title">
+						Bem-Vinda, <strong>Rayslla!</strong>
+					</h2>
+					<span>
+						Está é sua lista de horários de hoje, dia{" "}
+						{date.toLocaleDateString("pt-BR")} :)
+					</span>
+				</div>
+				<div className="items">
+					<h1>Próximos Horarios</h1>
+					<div className="container-body">
+						<HorariosList listHorarios={mockListHorario} />
+						<Calendar />
+					</div>
 				</div>
 			</div>
 		</div>
