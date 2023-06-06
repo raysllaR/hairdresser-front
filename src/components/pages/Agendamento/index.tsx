@@ -25,9 +25,9 @@ const Agendamento: React.FC = () => {
 					<InputLabel
 						label="Date"
 						placeholder="MM/DD/AAAA"
-						type="date"
+						// type="date"
 					/>
-					<DatePickerComponent />
+					{/* <DatePickerComponent /> */}
 
 					<div className="container-buttons">
 						<ButtonComponent
