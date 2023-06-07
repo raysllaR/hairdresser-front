@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import iconAcount from "../../../assets/images/icons/account_circle.svg";
-import { ClickAwayListener, Paper, MenuList, MenuItem } from "@mui/material";
-import IconImg from "../IconImg";
-import imgLogoSemText from "../../../assets/images/logos/logo-white-withiout-text.svg";
+import {
+	ClickAwayListener,
+	Paper,
+	MenuList,
+	MenuItem,
+	ButtonBase,
+} from "@mui/material";
 import { Link } from "react-router-dom";
+import IconImg from "../IconImg";
+import iconAcount from "../../../assets/images/icons/account_circle.svg";
+import imgLogoSemText from "../../../assets/images/logos/logo-white-withiout-text.svg";
 import "./style.css";
 
 const Header: React.FC = () => {
@@ -18,20 +24,22 @@ const Header: React.FC = () => {
 	};
 
 	return (
-		<div id="container-header">
-			<div className="header">
-				<div className="logo-container">
-					<img
-						src={imgLogoSemText}
-						alt="Logo"
-					/>
-					<span>Hero Hairdresses</span>
-				</div>
+		<div id="header">
+			<div className="container">
+				<Link to="/">
+					<div className="logo-container">
+						<img
+							src={imgLogoSemText}
+							alt="Logo"
+						/>
+						<span>Hero Hairdresses</span>
+					</div>
+				</Link>
 				<div>
-					<button onClick={toogleShoeDropMenu}>
+					<ButtonBase onClick={toogleShoeDropMenu}>
 						<IconImg urlImg={iconAcount} />
 						Perfil
-					</button>
+					</ButtonBase>
 					{showDropMenu ? (
 						<Paper className="drop-down">
 							<ClickAwayListener onClickAway={toogleShoeDropMenu}>
