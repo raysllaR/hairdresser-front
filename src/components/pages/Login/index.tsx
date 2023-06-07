@@ -19,7 +19,7 @@ const Login: React.FC = () => {
 
 	return (
 		<PageContainers
-			classNamePage="login"
+			idPage="login"
 			classNameContainer="container">
 			<div className="login-itens">
 				<img

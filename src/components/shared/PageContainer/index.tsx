@@ -26,18 +26,18 @@ const Container = styled.div`
 `;
 
 type TPageComponent = {
+	idPage: string;
 	children: ReactNode;
-	classNamePage?: string;
 	classNameContainer?: string;
 };
 
 const PageContainer: React.FC<TPageComponent> = ({
+	idPage,
 	children,
-	classNamePage,
 	classNameContainer,
 }) => {
 	return (
-		<Page className={classNamePage}>
+		<Page id={idPage}>
 			<Container className={classNameContainer}>{children}</Container>
 		</Page>
 	);
