@@ -1,14 +1,6 @@
-#editar-perfil {
-	display: flex;
-	justify-content: center;
-}
-
 #editar-perfil .body {
-	width: 100%;
-	max-width: 1000px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
 #editar-perfil .body .form {
@@ -21,7 +13,6 @@
 #editar-perfil .title {
 	margin: 30px 0;
 	color: var(--primary);
-	font-size: 1.5rem;
 	align-self: baseline;
 }
 
@@ -35,10 +26,4 @@
 	background-color: transparent !important;
 	color: var(--secondary) !important;
 	border: 1px solid var(--secondary) !important;
-}
-
-@media (max-width: 1100px) {
-	#editar-perfil .title {
-		align-self: center;
-	}
 }
