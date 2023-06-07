@@ -1,25 +1,20 @@
-#agendamento {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 #agendamento .body {
 	width: 100%;
-	max-width: 1000px;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	height: 70vh;
+	margin-top: 100px;
 }
 
 #agendamento .title {
 	margin-top: 30px;
 	color: var(--primary);
 	font-size: 1.5rem;
-	width: 1000px;
 	align-self: baseline;
+}
+
+#agendamento .container-date-time {
+	display: flex;
+	justify-content: space-between;
 }
 
 #agendamento .container-buttons {
@@ -29,18 +24,8 @@
 	margin: 30px 0;
 }
 
-#agendamento .container-buttons .button {
-	width: 100px;
-	border-radius: 16px;
-}
-
 #agendamento .container-buttons .reverse {
 	background-color: transparent !important;
 	color: var(--secondary) !important;
 	border: 1px solid var(--secondary) !important;
-}
-
-#agendamento .container-date-time {
-	display: flex;
-	justify-content: space-between;
 }
