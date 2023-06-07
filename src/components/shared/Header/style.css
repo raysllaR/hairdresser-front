@@ -1,67 +1,57 @@
-#container-header {
-	margin-top: 50px;
-	max-width: 1000px;
+#header {
 	width: 100%;
 	position: relative;
-	height: fit-content;
+	margin-top: 50px;
 }
 
-#container-header .logo-container {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-#container-header .logo-container span {
-	color: var(--white);
-	font-size: 1rem;
-}
-
-#container-header .header {
+#header .container {
 	border-radius: 16px;
-	max-width: 1000px;
-	width: 100%;
 	background-color: var(--primary);
 	height: fit-content;
-	padding: 10px 20px;
+	padding: 14px 24px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
-#container-header .drop-down {
+#header .logo-container {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+#header .logo-container span {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+#header a {
+	text-decoration: none;
+}
+
+#header .drop-down {
 	right: 0;
 	position: absolute;
 	background-color: var(--primary) !important;
 	border-radius: 0 0 8px 8px !important;
-	color: var(--white) !important;
-	font-size: 0.85rem !important;
 	box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.25) !important;
 	z-index: 1;
 }
 
-#container-header .drop-down a {
-	text-decoration: none;
+#header .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+	font-size: 0.875rem;
 }
 
-#container-header button {
+#header button {
 	font-size: 1rem;
 	color: var(--white);
 	display: flex;
 	gap: 10px;
-	align-items: center;
-}
-
-@media (max-width: 1100px) {
-	#container-header {
-		max-width: inherit;
-		width: 90%;
-	}
 }
 
 @media (max-width: 400px) {
-	#container-header .logo-container span {
+	#header .logo-container span {
 		display: none;
 	}
 }
