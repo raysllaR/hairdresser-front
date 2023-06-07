@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import "./style.css";
 import Header from "../../shared/Header";
 import HorariosList from "../../shared/HorariosList";
 import Calendar from "../../shared/Calendar";
+import PageContainer from "../../shared/PageContainer";
+import "./style.css";
 
 const Home: React.FC = () => {
 	const mockListHorario: Array<{
@@ -42,9 +43,7 @@ const Home: React.FC = () => {
 	const [date, setDate] = useState<Date>(new Date());
 
 	return (
-		<div
-			id="home"
-			className="page">
+		<PageContainer idPage="home">
 			<Header />
 			<div className="container-home">
 				<div className="container-title">
@@ -64,7 +63,7 @@ const Home: React.FC = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</PageContainer>
 	);
 };
 
