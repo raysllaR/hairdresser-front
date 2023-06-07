@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import FormLogin from "../../shared/formLogin";
 import CardComponent from "../../shared/CardComponent";
 import imgLogo from "../../../assets/images/logos/logo.svg";
-import "./index.css";
 import { Link, useNavigate } from "react-router-dom";
+import PageContainers from "../../shared/PageContainer";
+import "./index.css";
 
 const Login: React.FC = () => {
 	const navigate = useNavigate();
@@ -17,10 +18,10 @@ const Login: React.FC = () => {
 	}, []);
 
 	return (
-		<div
-			id="login"
-			className="page">
-			<div className="container">
+		<PageContainers
+			classNamePage="login"
+			classNameContainer="container">
+			<div className="login-itens">
 				<img
 					src={imgLogo}
 					alt="Logo"
@@ -38,7 +39,7 @@ const Login: React.FC = () => {
 					</div>
 				</CardComponent>
 			</div>
-		</div>
+		</PageContainers>
 	);
 };
 
