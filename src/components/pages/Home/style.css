@@ -1,20 +1,5 @@
-#home {
-	/* height: 100%;
-	width: 100%; */
-	/* background-color: var(--gray-50); */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: var(--primary);
-}
-#home .container-home {
-	max-width: 1000px;
-	width: 100%;
-}
-
 #home .container-home .title {
 	margin-top: 30px;
-	color: var(--primary);
 	font-size: 1.5rem;
 	align-self: baseline;
 	font-weight: 300;
@@ -22,6 +7,10 @@
 
 #home .container-home .title strong {
 	font-weight: 500;
+}
+
+#home .container-title {
+	color: var(--primary);
 }
 
 #home .container-home .items {
@@ -45,11 +34,6 @@
 }
 
 @media (max-width: 1100px) {
-	#home .container-home {
-		width: 90%;
-		margin: 0 5%;
-	}
-
 	#home .container-home .items .container-body {
 		flex-direction: column-reverse;
 		align-items: center;
