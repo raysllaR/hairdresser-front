@@ -1,19 +1,19 @@
-.login {
+#login {
 	background-image: url("../../../assets/images/background/bgLogin.png");
 	align-items: center !important;
 }
 
-.login span {
+#login span {
 	color: var(--white);
 	font-weight: 400;
 	font-size: 0.7rem;
 }
 
-.login a {
+#login a {
 	font-weight: 500;
 }
 
-.login .container {
+#login .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -27,13 +27,13 @@
 	align-items: center;
 }
 
-.login .links {
+#login .links {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 }
 
-.login .dados-adicionais {
+#login .dados-adicionais {
 	display: flex;
 	flex-direction: column;
 }
