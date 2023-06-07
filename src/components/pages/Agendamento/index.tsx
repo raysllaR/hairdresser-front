@@ -3,12 +3,11 @@ import React from "react";
 import "./style.css";
 import InputLabel from "../../shared/inputLabel";
 import ButtonComponent from "../../shared/ButtonComponent";
+import PageContainer from "../../shared/PageContainer";
 
 const Agendamento: React.FC = () => {
 	return (
-		<div
-			id="agendamento"
-			className="page">
+		<PageContainer idPage="agendamento">
 			<Header />
 			<div className="container">
 				<h2 className="title">Agendamento de Horário</h2>
@@ -50,7 +49,7 @@ const Agendamento: React.FC = () => {
 					</form>
 				</div>
 			</div>
-		</div>
+		</PageContainer>
 	);
 };
 
