@@ -5,6 +5,8 @@ const Page = styled.div`
 	width: 100%;
 	height: 100%;
 	display: flex;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	align-items: flex-start;
 	justify-content: center;
 	scroll-behavior: smooth;
@@ -18,7 +20,7 @@ const Container = styled.div`
 	max-width: 1000px;
 
 	@media (max-width: 1200px) {
-		margin: 0 5%;
+		padding: 0 5%;
 		align-items: center !important;
 	}
 `;
