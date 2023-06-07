@@ -1,50 +1,39 @@
-#login {
+.login {
 	background-image: url("../../../assets/images/background/bgLogin.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	justify-content: right;
-	align-items: center;
+	align-items: center !important;
 }
 
-#login span {
+.login span {
 	color: var(--white);
 	font-weight: 400;
 	font-size: 0.7rem;
 }
 
-#login a {
+.login a {
 	font-weight: 500;
 }
 
-#login .container {
+.login .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	margin-right: 10%;
-	align-items: center;
+	align-items: flex-end;
 	gap: 30px;
 }
 
-#login .links {
+.login-itens {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login .links {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 }
 
-#login .dados-adicionais {
+.login .dados-adicionais {
 	display: flex;
 	flex-direction: column;
-}
-
-/* ====== Reponsividade ====== */
-
-@media (max-width: 1200px) {
-	#login {
-		justify-content: center;
-	}
-	#login .container {
-		margin: 0 5%;
-		align-items: center;
-	}
 }
