@@ -2,14 +2,7 @@
 	background-image: url("../../../assets/images/background/Cadastro.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-#cadastro .container-cadastro {
-	display: flex;
 	align-items: center;
-	height: 100%;
-	justify-content: space-evenly;
-	padding: 20px;
 }
 
 #cadastro .navigator {
@@ -21,13 +14,13 @@
 	font-size: 0.87rem;
 }
 
-#cadastro .container-cadastro .container {
+#cadastro .container .body {
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
 }
 
-#cadastro .container-cadastro .container img {
+#cadastro .container .body img {
 	width: 205px;
 }
 
@@ -42,9 +35,9 @@
 }
 
 @media (max-width: 900px) {
-	#cadastro .container-cadastro .container {
+	#cadastro .container .body {
 		flex-direction: column;
-		width: fit-content;
+		width: 100%;
 		margin-top: 100px;
 		align-items: center;
 		gap: 30px;
